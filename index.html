@@ -1,0 +1,217 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    
+ 
+</head>
+<body>
+    <section>
+        <div class=" w-[80%] mx-auto">
+            <h1 class="text-[32px] font-bold text-black p-2.5">Job Application Tracker</h1>
+            <div class="grid grid-cols-3 gap-8 mt-4 mx-auto">
+                <div><p class="text-[14px] font-semibold text-gray-500 text-center p-2.5">Total</p>
+                <p id="totalCount" class="text-[20px] font-bold text-black text-center">8</p>
+                </div>
+                <div><p class="text-[14px] font-semibold text-gray-500 text-center p-2.5">Interview</p>
+                <p id="interviewCount" class="text-[20px] font-bold text-green-500 text-center">0</p>
+                </div>
+                <div><p class="text-[14px] font-semibold text-gray-500 text-center p-2.5">Rejected</p>
+                <p id="rejectedCount" class="text-[20px] font-bold text-red-500 text-center">0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="my-5 border-gray-300">
+    <section class="w-[80%] mx-auto">
+        <h2 class="text-[24px] font-bold text-black p-2.5">Available Jobs</h2>
+         <div class="flex gap-2 p-2.5">
+  <button id="allJobs" class="bg-blue-500 text-white py-2 px-4 rounded w-20">All</button>
+  <button id="interviewJobs" class="bg-white-200 text-gray-800 py-2 px-4 rounded w-20">Interview</button>
+  <button id="rejectedJobs" class="bg-white-200 text-gray-800 py-2 px-4 rounded w-20">Rejected</button>
+</div>
+<section id="jobListings">
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black">Mobile First Crop</h2>
+        <p class="text-[20px]  text-gray-500">React Native Developer</p></div>
+        <div><p class="text-[18px] font text-gray-800">Remote.Full-Time.$130,000 - $175,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">NOT APPLIED</button>
+             
+         
+        <p class="text-[18px]  text-gray-700 p-2">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black">WebFlow Agency</h2>
+        <p class="text-[20px]  text-gray-500">Web Designer & Developer</p></div>
+        <div><p class="text-[18px] font text-gray-800">Los Angeles,CA .Part-Time.$80,000 - $120,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">
+            NOT APPLIED
+        </button>
+        <p class="text-[18px]  text-gray-700 p-2"> <p>Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black">DataViz Solutions</h2>
+        <p class="text-[20px]  text-gray-500">Data Visualization Specialist</p></div>
+        <div><p class="text-[18px] font text-gray-800">Boston, MA •Full-time • $125,000 - $165,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">
+            NOT APPLIED
+        </button>
+        <p class="text-[18px]  text-gray-700 p-2">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black">CloudFirst Inc</h2>
+        <p class="text-[20px]  text-gray-500">Backend Developer</p></div>
+        <div><p class="text-[18px] font text-gray-800">Seattle, WA • Full-time •$140,000 - $190,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">
+            NOT APPLIED
+        </button>
+        <p class="text-[18px]  text-gray-700 p-2">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black"> Innovation Labs</h2>
+        <p class="text-[20px]  text-gray-500"> UI/UX Engineer</p></div>
+        <div><p class="text-[18px] font text-gray-800"> Austin, TX•Full-time • $110,000 - $150,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">
+            NOT APPLIED
+        </button>
+        <p class="text-[18px]  text-gray-700 p-2">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black"> MegaCorp Solutions</h2>
+        <p class="text-[20px]  text-gray-500"> JavaScript Developer</p></div>
+        <div><p class="text-[18px] font text-gray-800">Remote.Full-Time.$130,000 - $175,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">
+            NOT APPLIED
+        </button>
+        <p class="text-[18px]  text-gray-700 p-2">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black"> StartupXYZ</h2>
+        <p class="text-[20px]  text-gray-500"> Full Stack Engineer</p></div>
+        <div><p class="text-[18px] font text-gray-800">Remote.Full-Time.$120,000 - $160,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">
+            NOT APPLIED
+        </button>
+        <p class="text-[18px]  text-gray-700 p-2">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+    <div class="space-y-6 w-[95%] p-4 " >
+        <div><h2 class="text-[20px] font-bold text-black">TechCorp Industries</h2>
+        <p class="text-[20px]  text-gray-500">TechCorp Industries</p></div>
+        <div><p class="text-[18px] font text-gray-800">Remote • Full-Time • $130,000 - $175,000</p></div>
+        <div> <button class="status bg-blue-200 text-gray-800 py-2 px-4 rounded">
+            NOT APPLIED
+        </button>
+        <p class="text-[18px]  text-gray-700 p-2"> We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p></div>
+        <div class="flex gap-5">
+  <button class="interviewButton bg-white text-green-800 py-2 px-4 rounded border-2 border-green-500">
+    INTERVIEW
+  </button>
+
+  <button class="rejectedButton bg-white text-red-800 py-2 px-4 rounded border-2 border-red-500">
+    REJECTED
+  </button>
+  <button class="deleteButton bg-gray-800 text-white px-2 py-2 rounded">
+    DELETE
+</button>
+</div>
+    </div>
+
+</section>
+
+    </section>
+    <script src="script.js"></script>
+
+</body>
+  
+</html>
