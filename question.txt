@@ -1,0 +1,17 @@
+1.getElementById(id): Grabs one element by its own or unique ID.
+
+getElementsByClassName(class): Finds all elements with that class (live list that updates automatically).
+
+querySelector('selector') / querySelectorAll('selector'): Uses CSS selectors to get the first match or all matches.
+
+2. const Kishore = document.createElement("Kishore");
+Kishore.textContent = "Hello";
+document.body.append(Kishore);
+
+3. Event bubbling is when an event starts on the target element and then moving up through its parent elements to the root.
+
+4. Event delegation is attaching one event listener to a parent instead of many children, and handling events using event.target.
+
+
+5. preventDefault() stops the default browser action.  
+stopPropagation() stops the event from bubbling up to parent elements.
